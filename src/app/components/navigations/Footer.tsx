@@ -1,7 +1,6 @@
 // 📁 components/navigations/Footer.tsx
 
 import Link from "next/link"
-import ColorPickerIcon from "../../icons/ColorPickerIcon"
 import { ThemeSwitcher } from "..";
 import TwitterIcon from "@/app/icons/TwitterIcon";
 import InstagramIcon from "@/app/icons/InstagramIcon";
@@ -13,9 +12,9 @@ const Footer = () => {
   let showColor: boolean = false;
 
   return (
-    <footer className="sticky bottom-0 px-1 sm:px-5 py-8 dark:bg-gray-900 w-full ">
+    <footer className="sticky bottom-0 px-1 sm:px-5 py-8 w-full ">
 
-      <div className="flex flex-wrap justify-center mx-auto">
+      {/* <div className="flex flex-wrap justify-center mx-auto">
         <div className="grid gap-y-5">
           <div className="flex justify-center">
             <ul className="flex p-2 xxe:p-4 flex-row md:space-x-8 md:mt-0 md:text-sm font-medium">
@@ -55,17 +54,14 @@ const Footer = () => {
           </Link>
         </div>
 
-      </div>
-      <div className="absolute top-10 right-5 xxe:right-10 text-slate-300 dark:text-slate-700">
+      </div> */}
+      {/* <div className="absolute top-10 right-5 xxe:right-10 text-slate-300 dark:text-slate-700">
         <div 
           className="px-2 mt-3 font-semibold transition-colors rounded-2xl duration-600"
         >
-          {/* <ArrowRightIcon width={"1.5em"} height={"1.5em"}/> */}
-          {/* <ColorPickerIcon color={"blue"} width={"2em"} height={"2em"} /> */}
-          {/* Take a Quiz */}
           <ThemeSwitcher />
         </div>
-      </div>
+      </div> */}
     </footer>
   )
 }
