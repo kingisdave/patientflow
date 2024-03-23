@@ -9,59 +9,43 @@ import GithubIcon from "@/app/icons/GithubIcon";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  let showColor: boolean = false;
-
+  
   return (
-    <footer className="sticky bottom-0 px-1 sm:px-5 py-8 w-full ">
-
-      {/* <div className="flex flex-wrap justify-center mx-auto">
-        <div className="grid gap-y-5">
-          <div className="flex justify-center">
-            <ul className="flex p-2 xxe:p-4 flex-row md:space-x-8 md:mt-0 md:text-sm font-medium">
-              <li>
-                <Link href={"https://www.github.com/kingisdave"} 
-                  className="block p-1 text-gray-700 rounded hover:text-blue-700 dark:hover:bg-white dark:hover:text-black dark:text-white" 
-                  aria-current="page" target="_blank">
-                  <GithubIcon className="text-3xl xxe:text-5xl" />
-                </Link>
-              </li>
-              <li>
-                <Link href={"https://www.twitter.com/kingisdave"} 
-                  className="block p-1 text-gray-700 rounded-full hover:text-blue-700 dark:hover:bg-white dark:hover:text-cyan-700 dark:text-white" 
-                  aria-current="page" >
-                  <TwitterIcon className="text-3xl xxe:text-5xl "/>
-                </Link>
-              </li>
-              <li>
-                <Link href={"https://www.instagram.com/kingisdave"} 
-                  className="block p-1 text-gray-700 rounded-xl hover:text-blue-700 dark:hover:bg-slate-300 dark:hover:text-red-800 dark:text-white ">
-                  <InstagramIcon className="text-3xl xxe:text-5xl" />
-                </Link>
-              </li>
-              <li>
-                <Link href="https://www.linkedin.com/david-ayangunna" 
-                  className="block text-gray-700 rounded-lg hover:text-blue-700 dark:hover:bg-white dark:hover:text-blue-700 dark:text-white">
-                  <LinkedinIcon className="text-3xl xxe:text-5xl"/>
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <Link href="/" className="flex items-center justify-center">
-            <span className="self-center text-gray-600 text-xl xxe:text-sm font-medium whitespace-nowrap dark:text-white">
-              &copy; David Ayangunna {currentYear}
+    <footer className="bottom-0 px-1 px-6 xsl:px-10 pt-32 pb-6 w-full bg-black ">
+      <div className="w-full flex flex-wrap xsl:justify-between">
+        <div className="flex flex-col items-start gap-3 pr-10">
+          <p className="text-slate-400">
+            <span className="text-slate-300 font-medium">Disclaimer:</span>
+            The information provided on this website is for general 
+            informational purposes only
+          </p>
+          <div className="flex gap-x-3">
+            <span className="p-1 bg-white text-black rounded-full">
+              <LinkedinIcon className="text-sm" />
             </span>
-          </Link>
+            <span className="p-1 bg-white text-black rounded-full">
+              <InstagramIcon className="text-sm" />
+            </span>
+            <span className="p-1 bg-white text-black rounded-full">
+              <TwitterIcon className="text-sm" />
+            </span>
+            <span className="p-1 bg-white text-black rounded-full">
+              <GithubIcon className="text-sm" />
+            </span>
+          </div>
         </div>
-
-      </div> */}
-      {/* <div className="absolute top-10 right-5 xxe:right-10 text-slate-300 dark:text-slate-700">
-        <div 
-          className="px-2 mt-3 font-semibold transition-colors rounded-2xl duration-600"
-        >
-          <ThemeSwitcher />
+        <div className="flex gap-x-3 items-end">
+          <div className="flex flex-col">
+            <span>Join our Newsletter</span>
+            <input type="password" 
+              placeholder="Password *" 
+              className="w-full rounded-lg py-3 px-4"/>
+          </div>
+          <button className="p-3 bg-blue-500">
+            SUBSCRIBE
+          </button>
         </div>
-      </div> */}
+      </div>
     </footer>
   )
 }

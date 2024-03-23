@@ -3,8 +3,6 @@
 import { useState } from "react";
 import Link from "next/link"
 import { Container } from "../Container"
-// import Image from "next/image"
-// import ArrowRightIcon from "../icons/ArrowRightIcon";
 import { ThemeSwitcher } from "..";
 
 const Header = () => {
@@ -12,16 +10,11 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 backdrop-blur-xl z-50 px-3 md:px-10 shadow-lg">
+    <div className="sticky top-0 backdrop-blur-xl z-50 px-3 md:px-10 mb-10 shadow-lg">
       <Container className="flex items-center justify-between py-5 rounded-3xl text-neutral-700 dark:text-white">
         <Link href="/"
           className="text-lg sl:text-2xl ml:text-3xl font-sans font-medium italic">
             patientflow
-          {/* <Image src="/_assets/logo.png" 
-            alt="mainstack" 
-            width={50} height={50} 
-            className="h-14 w-14"
-          /> */}
         </Link>
         <div className="flex items-center gap-x-3">
           <button

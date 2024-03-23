@@ -7,10 +7,10 @@ import Footer from './navigations/Footer'
 export function Providers({ children } : {children: React.ReactNode}) {
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-      <main className="dark:bg-slate-900 h-screen">
+      <main className="dark:bg-slate-900 min-h-screen">
         <Header />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </ThemeProvider>
 )}
