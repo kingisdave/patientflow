@@ -70,7 +70,7 @@ export default function Register() {
             
           </div>
       </div>  
-      <div className="fixed bottom-0 left-0 py-10 text-black px-10 bg-white">
+      <div className="fixed bottom-0 left-0 w-full py-10 text-black px-10 bg-white">
         <p className="text-xs px-5">
           By clicking "Create Account" above, you acknowledge that you have read and 
           understood and agree to <span className="font-bold px-1">PatientflowHQ's</span> 
