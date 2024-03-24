@@ -6,9 +6,9 @@ export default function Landing() {
   return (
     <main className="min-h-screen w-full mt-10 flex flex-col items-center justify-center">
       <div className="w-full grid xsl:grid-cols-2 px-6 xsl:px-12 py-4">
-        <div className="w-full h-full flex flex-col gap-y-5 py-5">
-          <div className="pr-8">
-            <h1 className="text-3xl">
+        <div className="w-full h-full grid grid-cols-1 content-between gap-y-5 py-5">
+          <div className="pr-14 flex flex-col gap-3 xsl:gap-5">
+            <h1 className="text-3xl xsl:text-5xl md:text-6xl">
               Better Admission Notes in Less Time
             </h1>
             <h6>
@@ -16,7 +16,7 @@ export default function Landing() {
               Notes with billable diagnosis and case advisory in record time
             </h6>
           </div>
-          <div className="flex gap-x-2">
+          <div className="flex gap-x-2 xsl:gap-x-4">
             <button className="bg-red-800 text-white px-3 py-2">
               Try for free
             </button>
@@ -33,7 +33,7 @@ export default function Landing() {
           />
         </div>
       </div>
-      <div className="grid xsl:grid-cols-3 gap-y-4 gap-4 px-6 xsl:p-12 bg-blue-700">
+      <div className="grid xsl:grid-cols-3 gap-y-4 gap-4 px-6 py-8 xsl:p-12 bg-blue-700">
         <div className="flex flex-col items-start gap-2 px-2">
           <span className="p-2 bg-red-500 text-white rounded-full">
             <UserIcon className="text-sm" />

@@ -1,7 +1,6 @@
 // 📁 components/navigations/Footer.tsx
 
 import Link from "next/link"
-import { ThemeSwitcher } from "..";
 import TwitterIcon from "@/app/icons/TwitterIcon";
 import InstagramIcon from "@/app/icons/InstagramIcon";
 import LinkedinIcon from "@/app/icons/LinkedinIcon";
@@ -12,7 +11,7 @@ const Footer = () => {
   
   return (
     <footer className="bottom-0 px-1 px-6 xsl:px-10 pt-32 pb-6 w-full bg-black ">
-      <div className="w-full flex flex-wrap xsl:justify-between">
+      <div className="w-full flex flex-wrap xsl:justify-between gap-4">
         <div className="flex flex-col items-start gap-3 pr-10">
           <p className="text-slate-400">
             <span className="text-slate-300 font-medium">Disclaimer:</span>
@@ -38,7 +37,7 @@ const Footer = () => {
           <div className="flex flex-col">
             <span>Join our Newsletter</span>
             <input type="password" 
-              placeholder="Password *" 
+              placeholder="Enter your email" 
               className="w-full rounded-lg py-3 px-4"/>
           </div>
           <button className="p-3 bg-blue-500">
