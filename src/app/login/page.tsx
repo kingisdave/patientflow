@@ -31,7 +31,7 @@ export default function Login() {
           </div>
       </div>  
       <div className="bottom-0 left-0 w-full py-10 text-black px-10 bg-white">
-        <p className="text-xs px-5">
+        <p className="text-xs px-5 mb-3">
           By clicking "Create Account" above, you acknowledge that you have read and 
           understood and agree to <span className="font-bold px-1">PatientflowHQ's</span> 
           <Link href={'/'} className="underline px-1">Terms & Conditions</Link> and
