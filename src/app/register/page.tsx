@@ -53,8 +53,8 @@ export default function Register() {
             <div className="flex items-start">
               <input type="checkbox" name="terms" value="terms" className="mt-2" />
               <span className="text-sm ml-2"> I agree to PatientflowHQ
-                <Link href="/" className="text-green-200 px-1">Terms & Conditions</Link> and
-                <Link href="/" className="text-green-200 px-1">Privacy Policy</Link>
+                <Link href={'/'} className="text-green-200 px-1">Terms & Conditions</Link> and
+                <Link href={'/'} className="text-green-200 px-1">Privacy Policy</Link>
               </span>
             </div>
             <div className="flex items-start">
@@ -74,8 +74,8 @@ export default function Register() {
         <p className="text-xs px-5">
           By clicking "Create Account" above, you acknowledge that you have read and 
           understood and agree to <span className="font-bold px-1">PatientflowHQ's</span> 
-          <Link href="/" className="underline px-1">Terms & Conditions</Link> and
-          <Link href="/" className="underline px-1">Privacy Policy</Link>
+          <Link href={'/'} className="underline px-1">Terms & Conditions</Link> and
+          <Link href={'/'} className="underline px-1">Privacy Policy</Link>
         </p>
       </div>
     </main>

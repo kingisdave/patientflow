@@ -1,6 +1,6 @@
 // 📁 components/navigations/Footer.tsx
 
-import Link from "next/link"
+// import Link from "next/link"
 import TwitterIcon from "@/app/icons/TwitterIcon";
 import InstagramIcon from "@/app/icons/InstagramIcon";
 import LinkedinIcon from "@/app/icons/LinkedinIcon";

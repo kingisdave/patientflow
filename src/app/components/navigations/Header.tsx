@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className="sticky top-0 backdrop-blur-xl z-50 px-3 md:px-10 mb-10 shadow-lg">
       <Container className="flex items-center justify-between py-5 rounded-3xl text-neutral-700 dark:text-white">
-        <Link href="/"
+        <Link href={'/'}
           className="text-lg sl:text-2xl ml:text-3xl font-sans font-medium italic">
             patientflow
         </Link>
@@ -57,51 +57,51 @@ const Header = () => {
         </div>
         <div className={`${isOpen? '' : 'hidden'} md:hidden absolute top-0 left-0 h-screen bg-blue-900 text-white px-3`}>
           <div className="w-full flex justify-center font-sans font-bold italic">
-            <Link href="/"
+            <Link href={'/'}
               className="text-lg sl:text-xl ml:text-2xl py-4">
                 patientflow
             </Link>
 
           </div>
           <ul className={`grid items-center md:w-auto mt-2 font-bold`}>
-            <Link href="/" 
+            <Link href={'/'} 
               className="px-4 hover:bg-slate-200 py-4 focus:bg-slate-700 focus:text-slate-100">
               <h1 className="text-sm text-red-500">
               </h1>
               HLP Admit Note
             </Link>
-            <Link href="/" className=" py-4 px-4 focus:bg-slate-700 focus:text-slate-100">
+            <Link href={'/'} className=" py-4 px-4 focus:bg-slate-700 focus:text-slate-100">
               LOSHQ
             </Link>
-            <Link href="/" className="px-4 py-4 focus:bg-slate-700 focus:text-slate-100">
+            <Link href={'/'} className="px-4 py-4 focus:bg-slate-700 focus:text-slate-100">
               Hospitalist Insights
             </Link>
-            <Link href="/" className=" px-4 py-4 focus:bg-slate-700 focus:text-slate-100">
+            <Link href={'/'} className=" px-4 py-4 focus:bg-slate-700 focus:text-slate-100">
               Contact Us
             </Link>
-            <Link href="/login" 
+            <Link href={'/login'} 
               className="px-3 py-4 mt-4 font-semibold border bg-orange-500 rounded-sm">
               Login
             </Link>
           </ul>
         </div>
         <ul className={`hidden md:flex md:gap-x-3 xsl:gap-x-10 items-center md:w-auto`}>
-          <Link href="/" 
+          <Link href={'/'} 
             className="flex items-center px-4 hover:bg-slate-200 focus:bg-slate-700 focus:text-slate-100 rounded-3xl ">
             <h1 className="text-sm text-red-500">
             </h1>
             HLP Admit Note
           </Link>
-          <Link href="/" className="">
+          <Link href={'/'} className="">
             LOSHQ
           </Link>
-          <Link href="/" className="">
+          <Link href={'/'} className="">
             Hospitalist Insights
           </Link>
-          <Link href="/" className="">
+          <Link href={'/'} className="">
             Contact Us
           </Link>
-          <Link href="/login" 
+          <Link href={'/login'} 
             className="px-4 py-2 font-semibold border bg-orange-500 rounded-sm">
             Login
           </Link>

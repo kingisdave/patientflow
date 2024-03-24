@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react';
-import Footer from './navigations/Footer';
 
 /**
  * Renders a container component that wraps its children with styling and optional custom element type.

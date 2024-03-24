@@ -18,14 +18,15 @@ export default function Login() {
                   className="w-full rounded-lg py-3 px-4"/>
               </div>
               <div className="flex justify-end -mt-4">
-                <Link href="/">Forgot password?</Link>
+                <Link href={'/'}>Forgot password?</Link>
               </div>
             </div>
             <button className="w-full py-2 text-center font-bold bg-red-800 rounded-lg">
               Login
             </button>
-            <span className="text-sm">Don't have an account? 
-              <Link href="/register" className="pl-2 text-green-200">Signup</Link>
+            <span className="text-sm">
+              Don't have an account? 
+              <Link href={'/register'} className="pl-2 text-green-200">Signup</Link>
             </span>
           </div>
       </div>  
@@ -33,8 +34,8 @@ export default function Login() {
         <p className="text-xs px-5">
           By clicking "Create Account" above, you acknowledge that you have read and 
           understood and agree to <span className="font-bold px-1">PatientflowHQ's</span> 
-          <Link href="/" className="underline px-1">Terms & Conditions</Link> and
-          <Link href="/" className="underline px-1">Privacy Policy</Link>
+          <Link href={'/'} className="underline px-1">Terms & Conditions</Link> and
+          <Link href={'/'} className="underline px-1">Privacy Policy</Link>
         </p>
       </div>
     </main>
